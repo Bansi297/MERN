@@ -84,7 +84,8 @@ function App() {
     <>
   
       <maincontext.Provider value={{products,cart,addtocart,RemoveCart,setSearchVar,searchvar,searchHandler,inr,qtyDec,qtyInc,setsingleproduct,singleproduct}}>
-      <Header />
+        <Router basename = "MERN">
+          <Header />
         <Routes>
           <Route path='/' element={<Login/>}/>
           <Route path='/cart' element={<Cart/>}/>
@@ -95,6 +96,8 @@ function App() {
           <Route path='/users' element={<Users/>}/>
           <Route path='/forgotPassword' element={<ForgotPassword/>}/>
         </Routes>
+          </Router>
+
         </maincontext.Provider>
 
     </>
