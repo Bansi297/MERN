@@ -86,12 +86,12 @@ function App() {
       <maincontext.Provider value={{products,cart,addtocart,RemoveCart,setSearchVar,searchvar,searchHandler,inr,qtyDec,qtyInc,setsingleproduct,singleproduct}}>
       <Header />
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/' element={<Login/>}/>
           <Route path='/cart' element={<Cart/>}/>
           <Route path='/search' element={<Search/>}/>
           <Route path='/product' element={<ProductDetails/>}/>
           <Route path='/register' element={<Register/>}/>
-          <Route path='/login' element={<Login/>}/>
+          <Route path='/home' element={<Home/>}/>
           <Route path='/users' element={<Users/>}/>
           <Route path='/forgotPassword' element={<ForgotPassword/>}/>
         </Routes>
