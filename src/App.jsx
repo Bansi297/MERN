@@ -84,7 +84,7 @@ function App() {
     <>
   
       <maincontext.Provider value={{products,cart,addtocart,RemoveCart,setSearchVar,searchvar,searchHandler,inr,qtyDec,qtyInc,setsingleproduct,singleproduct}}>
-        <Router basename = "MERN">
+        <Router  basename={process.env.PUBLIC_URL}>
           <Header />
         <Routes>
           <Route path='/MERN/' element={<Login/>}/>
