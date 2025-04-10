@@ -87,7 +87,7 @@ function App() {
         <Router basename = "MERN">
           <Header />
         <Routes>
-          <Route path='/' element={<Login/>}/>
+          <Route path='/MERN/' element={<Login/>}/>
           <Route path='/cart' element={<Cart/>}/>
           <Route path='/search' element={<Search/>}/>
           <Route path='/product' element={<ProductDetails/>}/>
